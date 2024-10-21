@@ -1,0 +1,26 @@
+<div class="claim-status-container"></div>
+  <h2>Claim Status</h2>
+  <table class="claim-table">
+    <thead>
+      <tr>
+        <th>Claim ID</th>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Submitted Date</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let claim of claims">
+        <td>{{ claim.id }}</td>
+        <td>{{ claim.description }}</td>
+        <td>{{ claim.amount | currency }}</td>
+        <td>{{ claim.submittedDate | date:'short' }}</td>
+        <td>
+          <span class="status-badge" [ngClass]="getStatusClass(claim.status)">
+            {{ claim.status }}
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>

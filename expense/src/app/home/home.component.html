@@ -1,0 +1,13 @@
+<div class="container"></div>
+  <h1>Welcome to the Expense Claim Portal</h1>
+  <div class="card">
+    <p>
+      The Expense Claim Portal streamlines the process of submitting, approving, and processing expense claims within our university. This user-friendly system allows staff and students to easily submit claims, track their status, and receive timely reimbursements.
+    </p>
+  </div>
+  <div class="button-group">
+    <button (click)="navigateTo('/claim-create')" class="btn">Create Claim</button>
+    <button (click)="navigateTo('/claim-status')" class="btn">View Claims</button>
+    <button (click)="navigateTo('/claim-approve')" class="btn">Approve Claims</button>
+    <button (click)="navigateTo('/claim-process')" class="btn">Process Claims</button>
+  </div>

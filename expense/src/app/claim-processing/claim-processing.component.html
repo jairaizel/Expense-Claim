@@ -1,0 +1,27 @@
+<div class="claim-processing-container">
+    <h2>Claim Processing</h2>
+    <table class="claim-table">
+      <thead>
+        <tr>
+          <th>Claim ID</th>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let claim of claims">
+          <td>{{ claim.id }}</td>
+          <td>{{ claim.description }}</td>
+          <td>{{ claim.amount | currency }}</td>
+          <td>{{ claim.status }}</td>
+          <td>
+            <button class="btn btn-primary" (click)="processClaim(claim.id)" [disabled]="claim.status === 'Processed'">
+              Process
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

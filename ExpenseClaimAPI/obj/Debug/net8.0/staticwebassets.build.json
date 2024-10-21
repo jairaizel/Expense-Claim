@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cR3IRutny6kRaWB32zIqF3c1NrUbcSXtlTy3vOpqkrY=",
+  "Source": "ExpenseClaimAPI",
+  "BasePath": "_content/ExpenseClaimAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
